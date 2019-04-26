@@ -1,0 +1,33 @@
+Parameters:
+  EC2InstanceType:
+    Default: t2.medium
+    Description: EC2 instance type on which IDE runs
+    Type: String
+  AutoHibernateTimeout:
+    Default: 240
+    Description: How many minutes idle before shutting down the IDE
+    Type: Number
+
+Resources:
+  IDE:
+    Type: AWS::Cloud9::EnvironmentEC2
+    Properties:
+      Repositories:
+      - RepositoryUrl: https://github.com/bikrambora/devlabs2018.git
+        PathComponent: ecsdocker
+      OwnerArn: !Sub "arn:aws:iam::${AWS::AccountId}:user/labStudent_1"
+      Description: ecs-docker-lab
+      AutomaticStopTimeMinutes:
+        Ref: AutoHibernateTimeout
+      InstanceType:
+        Ref: EC2InstanceType
+      Name:
+        Ref: AWS::StackName
+Outputs:
+  Cloud9URL:
+    Value:
+      Fn::Join:
+      - ''
+      - - https://console.aws.amazon.com/cloud9/home/environments/
+        - Ref: IDE
+    Description: ecs docker lab
