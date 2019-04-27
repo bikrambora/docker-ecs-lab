@@ -14,8 +14,6 @@ You can also use your local IDE for all the steps of this lab.
 
 * on top right corner - **Switch to N.Virginia (us-east-1)**
 
-* on the left hand pane click on **"Shared With You"**
-
 ![](media/image1.png)
 
 Open the "**ECS Lab Cloud 9 Env**" By clicking on **Open IDE**
