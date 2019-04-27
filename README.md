@@ -1,4 +1,4 @@
-# Build Run and Deploy a Containerized Web Application using Docker and Amazon Elastic Container Service (ECS)
+# Build, Run and Deploy a Containerized Web Application using Docker and Amazon Elastic Container Service (ECS)
 
 In this lab we will learn how to build and run a containerised application. We will then use the Amazon Elastic Container Service to host and run this container in the Cloud.
 
