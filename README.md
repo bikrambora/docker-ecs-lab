@@ -27,7 +27,7 @@ Open the "**ECS Lab Cloud 9 Env**" By clicking on **Open IDE**
 Once Inside Cloud9 - Open the Terminal change directory to the correct folder & **reset the lab**
 
 ```
-$ cd ~/environment/devlabs2018/
+$ cd ~/environment/ecs-docker-lab/
 
 $ chmod +x Reset.sh
 
