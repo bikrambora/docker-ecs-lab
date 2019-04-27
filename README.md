@@ -107,14 +107,7 @@ You will see a set of commands
 ```
 $ cd DockerStaticSite-master/
 ```
-Login to ECR using (The quotes in the command are important)
-```
-$ `aws ecr get-login --no-include-email --region us-west-2`
-```
-
-**Follow the steps 3, 4 & 5 of the push commands to build and push the modified image**
-
-\*If facing issues - make sure you've done step 2
+**Follow the steps of the push commands to build and push the new modified image to the cloud repo**
 
 **Once the push is completed your docker image will be pushed to an ECR image repository on AWS**
 
