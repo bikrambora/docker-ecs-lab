@@ -14,9 +14,11 @@ You can also use your local IDE for all the steps of this lab.
 
 * on top right corner - **Switch to N.Virginia (us-east-1)**
 
+* on the left hand pane click on **"Shared With You"**
+
 ![](media/image1.png)
 
-Open the "**ECS Docker Cloud 9 Env**" By clicking on **Open IDE**
+Open the "**ECS Lab Cloud 9 Env**" By clicking on **Open IDE**
 
 ![](media/cloud9.png)
 
@@ -123,6 +125,13 @@ now **Deploy** the your new application **Version** to the service
 
 Navigate to the **Elastic Container Service** Dashboard.
 
+Go to your ECR repo
+
+* Copy the repo url
+
+![](media/ecrRepo.png)
+
+
 In the navigation menu on the **left**, click **Task Definitions.**
 
 * select the **simplewebtask**
@@ -130,6 +139,12 @@ In the navigation menu on the **left**, click **Task Definitions.**
 * checkmark **simplewebtask**
 
 * click **Create New Revision**
+
+* scroll down and click **" Web Container "**
+* In  *Image* paste your repo url
+* Click "Update"
+* Scroll to bottom and click **Create**
+
 
 * scroll to the bottom of the page, then click **Create**
 
