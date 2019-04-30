@@ -16,7 +16,7 @@ You can also use your local IDE for all the steps of this lab.
 
 ![](media/image1.png)
 
-Open the "**ECS Lab Cloud 9 Env**" By clicking on **Open IDE**
+Open the "**ECS Docker Cloud 9 Env**" By clicking on **Open IDE**
 
 ![](media/cloud9.png)
 
