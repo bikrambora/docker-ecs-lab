@@ -14,7 +14,7 @@ You can also use your local IDE for all the steps of this lab.
 
 * on top right corner - **Switch to N.Virginia (us-east-1)**
 
-* on the left hand pane click on **"Shared With You"**
+* on the left hand pane click on **"Your Environments"**
 
 ![](media/image1.png)
 
@@ -88,20 +88,37 @@ the cloud
 
 ![](media/docker-build.png)
 
-Navigate to the ECS (Elastic Container Service) console and click on
+Navigate to the ECS (Elastic Container Service) console  on another and click on
 **Repositories**
 
 Click on "**ecs-lab-repo**"
 
 ![](media/image3.png)
 
+Your repo may already have an image in there, thats fine, proceed with steps
+
+We will now push your modified docker image to the cloud
+
 Click on "**View Push Commands** "
 
 ![](media/image4.png)
 
-You will see a set of commands
+You will see a set of commands.
 
+Copy paste the 4 commands into cloud9 terminal
+
+paste in commands 1 -4 in the cloud9 terminal in your other browser tab
+
+make sure you paste them in the right folder
+
+```
+$ cd DockerStaticSite-master/
+```
 ![](media/image5.png)
+
+you will see that the container image is pushed ========> to the cloud
+
+now your container is successfully in the cloud
 
 **Go back to cloud9 cd into the correct folder**
 ```
