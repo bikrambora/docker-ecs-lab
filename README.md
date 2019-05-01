@@ -105,26 +105,28 @@ Click on "**View Push Commands** "
 
 You will see a set of commands.
 
-Copy paste the 4 commands into cloud9 terminal
-
-paste in commands 1 -4 in the cloud9 terminal in your other browser tab
-
-make sure you paste them in the right folder
-
-```
-$ cd DockerStaticSite-master/
-```
 ![](media/image5.png)
 
-you will see that the container image is pushed ========> to the cloud
-
-now your container is successfully in the cloud
-
 **Go back to cloud9 cd into the correct folder**
+
 ```
 $ cd DockerStaticSite-master/
 ```
+
 **Follow the steps of the push commands to build and push the new modified image to the cloud repo**
+
+* Copy paste the 4 commands into cloud9 terminal
+
+* Paste in commands 1 -4 in the cloud9 terminal in your other browser tab
+
+* Make sure you paste them in the right folder
+
+
+
+* You will see that the container image is pushed ========> to the cloud
+
+* Now your container is successfully in the cloud
+
 
 **Once the push is completed your docker image will be pushed to an ECR image repository on AWS**
 
