@@ -88,7 +88,7 @@ the cloud
 
 ![](media/docker-build.png)
 
-Navigate to the ECS (Elastic Container Service) console  on another and click on
+Navigate to the ECS (Elastic Container Service) console  on another tab and click on
 **Repositories**
 
 Click on "**ecs-lab-repo**"
