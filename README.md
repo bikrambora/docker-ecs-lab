@@ -22,7 +22,7 @@ SELECT REGION
 First we will provision our network VPC and deploy an ECS Cluster
 The ECS cluster consists of the networking components and the underlying EC2 hosts that our containers will run in.
 
-## Provision the cluster
+## Provision the Network and Hosts - ECS Cluster
 
 Click the Launch Stack button below to provision your cluster. 
 
@@ -34,10 +34,10 @@ This will take a few minutes while this is running you can move on with the next
 
 
 
-## Provision the Cloud9 IDE
+## Provision the Dev Environment - Cloud9 IDE
 
-While the cluster is provisioning
-Let's initialize our development environment.
+While the cluster is provisioning let's initialize our development environment.
+
 Click on the Launch Stack button below to provision your IDE in the cloud.
 
 <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=dev-environment&templateURL=https://dev-day-bucket.s3-ap-southeast-2.amazonaws.com/lab-templates/5_Lab-Env-C9.yaml">
@@ -178,8 +178,8 @@ We will now push your modified docker image to the cloud
 
 >![](media/image5.png)
 
-- Go back to your cloud9 environment 
-- Change DIrectory into the correct folder
+- Go back to your ***cloud9*** environment 
+- Change directory into the correct folder
 
 ```
 $ cd DockerStaticSite-master/
@@ -213,7 +213,7 @@ Your entire application stack does not need to exist on a single task definition
 In an earlier step we provisioned our networks and ECS cluster through clooudformation. That should have finishd by now.
 We will now deploy our newly pushed docker image to the cluster. So that we can run the container in the cloud.
 
-- Go to **Services** and Navigate to the **Elastic Container Service** Dashboard.
+- Go to **Services** and navigate to the **Elastic Container Service** Dashboard.
 - In the navigation menu on the **left**, click **Task Definitions.**
 
 >![](media/create-new-task.png)
@@ -247,7 +247,10 @@ An Amazon ECS service enables you to run and maintain a specified number of inst
 
 >![](media/create-service1.png)
 
-- in the **Clusters** window, click **default**.
+- in the **Clusters** window, click **default**
+
+>![](media/create-service15.png)
+
 - on the **Services** tab,
 - Click ***Create*** 
 
