@@ -22,7 +22,7 @@ SELECT REGION
 First we will provision our network VPC and deploy an ECS Cluster
 The ECS cluster consists of the networking components and the underlying EC2 hosts that our containers will run in.
 
-## Provision the Network and Hosts - ECS Cluster
+## Provision the ECS Cluster - virtual network and hosts 
 
 Click the Launch Stack button below to provision your cluster. 
 
@@ -47,6 +47,9 @@ Click on the Launch Stack button below to provision your IDE in the cloud.
 - Once the Cloud9 Stack is completed, go to ***Services*** and go to ***Cloud9*** on the AWS Web console
 - On the left hand pane click on ***Your Environments***
 - Open the ***ECS Lab Cloud 9 Env*** By clicking on ***Open IDE***  - this is your IDE in the cloud.
+- When you open cloud9 it will automatically clone this git repo onto it's local file system
+- This has all the files you need pre downloaded
+- Have a browse of the folder structure to see what files are in there
 
 >![](media/cloud9.png)
 
@@ -165,7 +168,7 @@ Now we can push/pull images to/from this repo ✅
 ## Push you Docker Image into ECR
 
 
-We will now push your modified docker image to the cloud
+We will now push your new docker image to the cloud
 
 
 - Click on Images on the left
