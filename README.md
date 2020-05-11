@@ -216,17 +216,17 @@ We will now deploy our newly pushed docker image to the cluster. So that we can 
 - Go to **Services** and Navigate to the **Elastic Container Service** Dashboard.
 - In the navigation menu on the **left**, click **Task Definitions.**
 
->![](media/CreateNewTask.png)
+>![](media/create-new-task.png)
 
 - Click ***Create new Task Definition***
 - Select ***Launch Type*** as ***EC2*** and click next
 
->![](media/TaskDef1.png)
+>![](media/task-definition.png)
 
 - Put in the ***Task Definition Name*** as ***simplewebtask***
 - Scroll down and click ***Add Container***
 
->![](media/AddContainer.png)
+>![](media/add-container.png)
 
 - Put in the name as ***WebContainer***
 - In  ***Image*** paste your ***IMAGE URI*** that we copied earlier
@@ -245,13 +245,13 @@ An Amazon ECS service enables you to run and maintain a specified number of inst
 
 - in the left navigation pane, click **Clusters**.
 
->![](media/CreateService1.png)
+>![](media/create-service1.png)
 
 - in the **Clusters** window, click **default**.
 - on the **Services** tab,
 - Click ***Create*** 
 
->![](media/CreateService2.png)
+>![](media/create-service2.png)
 
 Enter the folowing parameters
 
@@ -263,7 +263,7 @@ Enter the folowing parameters
 
 Next Step : Configure Network
 
->![](media/CreateService3.png)
+>![](media/create-service3.png)
 
 - Health check grace period ***10*** Seconds
 - Load balancer type is ***classic load balancer***
@@ -284,7 +284,7 @@ Well done your ECS Service has now been created ✅
 Now ECS is provisioning the desired number of Tasks in our cluster. Once created the tasks will register with our loadbalancers which we provisioned in our initial cloudformation script.
 
 
->![](media/CreateService4.png)
+>![](media/create-service4.png)
 
 
 ## Viewing the Running Website
