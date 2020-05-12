@@ -46,7 +46,7 @@ Click on the Launch Stack button below to provision your IDE in the cloud.
 
 - Once the Cloud9 Stack is completed, go to ***Services*** and go to ***Cloud9*** on the AWS Web console
 - On the left hand pane click on ***Your Environments***
-- Open the ***ECS Lab Cloud 9 Env*** By clicking on ***Open IDE***  - this is your IDE in the cloud.
+- Open the ***ECS Docker Cloud9 Env*** By clicking on ***Open IDE***  - this is your IDE in the cloud.
 - When you open cloud9 it will automatically clone this git repo onto it's local file system
 - This has all the files you need pre downloaded
 - Have a browse of the folder structure to see what files are in there
@@ -366,11 +366,11 @@ the cloud
 
 It is important to execute these steps in order to no longer incur additional charges for the resources that you have provisioned.
 
-- **Delete** the Cloud formation stack for the ecs cluster
+- **DELETE** the Cloud formation stack for the ecs cluster
 
-- **Delete** the cloud for the cloud9 dev environment
+- **DELETE** the cloud for the cloud9 dev environment
   
-- **Delete** any child cloudformation stacks spawned during this lab
+- **DELETE** any child cloudformation stacks spawned during this lab
 
 ## Further reading
 
